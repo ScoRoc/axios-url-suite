@@ -29,8 +29,10 @@ axiosUrlSuite takes an object that has two keys: url and name.
 The url expects a string in the form of `'http://www.domain.com'`. This would set each of the returned functions to send their request to `'http://www.domain.com'`.
 
 The name expects a string which you would like to name your functions by.
+
 Passing `name: 'user'` would return and object of:
-`{ getUser, findUsers, postUser, putUser, deleteUser }`
+`{ getUser, findUsers, postUser, putUser, deleteUser }`.
+
 Passing `name: 'chair'` would return an object of:
 `{ getChair, findChairs, postChairs, putChairs, deleteChairs }`  and etc.
 
