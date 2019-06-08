@@ -53,8 +53,3 @@ const makeAxiosFixedUrlSuite = ({ url, name }) => {
 module.exports = function({ url, name }) {
   return makeAxiosFixedUrlSuite({ url, name });
 };
-
-exports.getWithAxios = function() { return makeAxiosFn('get') }
-exports.postWithAxios = function() { return makeAxiosFn('post') }
-exports.putWithAxios = function() { return makeAxiosFn('put') }
-exports.deleteWithAxios = function() { return makeAxiosFn('delete') }
