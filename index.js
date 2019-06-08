@@ -1,4 +1,5 @@
 const axios = require('axios')
+exports.axiosUrlSuite = function({ url, name }) {
 
 // capitalizeFirstLetter :: String -> String
 export const capitalizeFirstLetter = word => {
@@ -49,6 +50,6 @@ const makeAxiosFixedUrlSuite = ({ url, name }) => {
   }
 }
 
-exports.axiosUrlSuite = function({ url, name }) {
+// exports.axiosUrlSuite = function({ url, name }) {
   return makeAxiosFixedUrlSuite({ url, name });
 };
