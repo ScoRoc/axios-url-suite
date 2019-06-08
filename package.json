@@ -1,0 +1,24 @@
+{
+  "name": "axios-url-suite",
+  "version": "1.0.0",
+  "description": "A small package that creates a custom names function to call axios with a fixed url.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ScoRoc/axios-url-suite.git"
+  },
+  "keywords": [
+    "axios",
+    "custom",
+    "name"
+  ],
+  "author": "Scott Rosehart",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ScoRoc/axios-url-suite/issues"
+  },
+  "homepage": "https://github.com/ScoRoc/axios-url-suite#readme"
+}
