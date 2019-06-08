@@ -2,7 +2,7 @@ const axios = require('axios')
 exports.axiosUrlSuite = function({ url, name }) {
 
 // capitalizeFirstLetter :: String -> String
-export const capitalizeFirstLetter = word => {
+const capitalizeFirstLetter = word => {
   const validChars = /^[a-zA-Z]/
   if (!validChars.test(word[0])) throw `The first character of ${word} is invalid. It must be a letter a-z or A-Z.`
   return word.replace(/^\w/, c => c.toUpperCase())
@@ -11,10 +11,10 @@ export const capitalizeFirstLetter = word => {
 // makeAxiosFn :: String -> String -> (Object, Object) -> Object
 const makeAxiosFn = method => url => (data, config) => axios({ method, url, data, config })
 
-export const getWithAxios = makeAxiosFn('get')
-export const postWithAxios = makeAxiosFn('post')
-export const putWithAxios = makeAxiosFn('put')
-export const deleteWithAxios = makeAxiosFn('delete')
+const getWithAxios = makeAxiosFn('get')
+const postWithAxios = makeAxiosFn('post')
+const putWithAxios = makeAxiosFn('put')
+const deleteWithAxios = makeAxiosFn('delete')
 
 // makeHttpRequestNames :: String -> Object
 const makeHttpRequestNames = name => {
