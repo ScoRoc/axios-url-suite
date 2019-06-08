@@ -26,12 +26,12 @@ const { getUser } = axiosUrlSuite({ url: someUrl , name: 'users'});
 
 axiosUrlSuite takes an object that has two keys: url and name.
 
-The url expects a string in the form of `'http://www.domain.com'` The name expects a string which you would like to name your functions by.
+The url expects a string in the form of `'http://www.domain.com'` The name expects a string which you would like to name your functions by. This would send each request to `'http://www.domain.com'`
 
-Passing `'user'` would return and object of:
+Passing `name: 'user'` would return and object of:
 `{ getUser, findUsers, postUser, putUser, deleteUser }`
 
-Passing `'chair'` would return an object of:
+Passing `name: 'chair'` would return an object of:
 `{ getChair, findChairs, postChairs, putChairs, deleteChairs }`  and etc.
 
 ## Examples
