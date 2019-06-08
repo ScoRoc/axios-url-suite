@@ -4,10 +4,10 @@ A simple module for generating custom named functions with fixed urls that call 
 
 ## Features
 
-..* Make a custom named [axios](https://www.npmjs.com/package/axios) http call
-..* Makes code more readable
-..* Allows custom naming 5 http calls in two lines.
-..* Checks for improper characters in the name and makes auto snakeCase for first letter of name
+* Make a custom named [axios](https://www.npmjs.com/package/axios) http call
+* Makes code more readable
+* Allows custom naming 5 http calls in two lines.
+* Checks for improper characters in the name and makes auto snakeCase for first letter of name
 
 
 
