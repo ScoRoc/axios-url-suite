@@ -38,7 +38,7 @@ const makeHttpRequestNames = name => {
 }
 
 // makeAxiosFixedUrlSuite :: Object<url: String, name: String> -> Object<Fn...>
-exports.makeAxiosFixedUrlSuite = ({ url, name }) => {
+const makeAxiosFixedUrlSuite = ({ url, name }) => {
   const { get, find, post, put, del } = makeHttpRequestNames(name)
   return {
     [get]: getWithAxios(url),
@@ -48,3 +48,7 @@ exports.makeAxiosFixedUrlSuite = ({ url, name }) => {
     [del]: deleteWithAxios(url),
   }
 }
+
+exports.axiosUrlSuite = function({ url, name }) {
+  return makeAxiosFixedUrlSuite({ url, name });
+};
