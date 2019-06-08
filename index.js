@@ -1,4 +1,4 @@
-import axios from 'axios'
+const axios = require('axios')
 
 // capitalizeFirstLetter :: String -> String
 export const capitalizeFirstLetter = word => {
