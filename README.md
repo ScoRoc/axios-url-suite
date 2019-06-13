@@ -45,6 +45,7 @@ const url = 'https://pokeapi.co/api/v2/pokemon/ditto/';
 const { getPokemon, findPokemons, postPokemon, putPokemon, deletePokemon } = axiosUrlSuite({ url: url , name: 'pokemon'});
 
 postPokemon(someData, configOptions).then(result => console.log('result: ', result))
+
 // This is equivalent to axios.post(url, { data: someData, ...configOptions }).then(console.log(result: ', result'))
 // Assuming someData is any data
 // And configOptions is an object containing axios accepted config options
