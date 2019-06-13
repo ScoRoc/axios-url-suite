@@ -44,7 +44,7 @@ const axiosUrlSuite = require('axios-url-suite');
 const url = 'https://pokeapi.co/api/v2/pokemon/ditto/';
 const { getPokemon, findPokemons, postPokemon, putPokemon, deletePokemon } = axiosUrlSuite({ url: url , name: 'pokemon'});
 
-postPokemon().then(result => console.log('result: ', result))
+postPokemon(someData, someHeader).then(result => console.log('result: ', result))
 // This is equivalent to axios.post(url, { data: someData }).then(console.log(result: ', result'))
 ```
 
