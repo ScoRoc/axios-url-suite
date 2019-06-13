@@ -9,7 +9,7 @@ const capitalizeFirstLetter = word => {
 }
 
 // makeAxiosFn :: String -> String -> (Object, Object) -> Object
-const makeAxiosFn = method => url => (data, config) => axios({ method, url, data, config })
+const makeAxiosFn = method => url => (data, config) => axios({ method, url, data, ...config })
 
 const getWithAxios = makeAxiosFn('get')
 const postWithAxios = makeAxiosFn('post')
