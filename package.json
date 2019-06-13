@@ -1,6 +1,6 @@
 {
   "name": "axios-url-suite",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "A small package that creates a custom names function to call axios with a fixed url.",
   "main": "index.js",
   "es6": true,
