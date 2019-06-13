@@ -21,7 +21,7 @@ $ npm i axios-url-suite
 ## Syntax and Usage
 
 ```
-const { getUser } = axiosUrlSuite({ url: someUrl , name: 'users'});
+const { getUser } = axiosUrlSuite({ url: someUrl , name: 'user'});
 ```
 
 axiosUrlSuite takes an object that has two keys: url and name.
